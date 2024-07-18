@@ -1,0 +1,4 @@
+@import "@fontsource/dm-sans"; /* Import DM Sans font */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
