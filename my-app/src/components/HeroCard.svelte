@@ -7,7 +7,7 @@
 </script>
 
 <div class="hero-card bg-cover bg-center rounded-[48px] p-10 relative overflow-hidden h-[620px]" style="background-image: url('/src/assets/background-card.jpg');">
-  <div class="relative z-10 mt-28 pl-8">
+  <div class="relative z-10 pl-8">
     <div class="mb-8">
       <h1 class="text-7xl font-bold text-black m-0">
         Win online with the <br /> best product information.
