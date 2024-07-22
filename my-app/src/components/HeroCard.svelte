@@ -2,7 +2,7 @@
   import Button from "./Button.svelte";
 </script>
 
-<div class="hero-card bg-cover bg-center rounded-[24px] md:rounded-[48px] p-6 md:p-10 relative overflow-hidden h-[620px]" style="background-image: url('/src/assets/background-card.jpg');">
+<div class="hero-card bg-cover bg-center rounded-[24px] md:rounded-[48px] p-6 md:p-10 relative overflow-hidden h-[620px] mt-0" style="background-image: url('/src/assets/background-card.jpg');">
   <div class="relative z-10 pl-2 md:pl-8">
     <div class="mb-4 md:mb-8">
       <h1 class="text-3xl md:text-7xl font-bold text-black mt-10 md:mt-28">
