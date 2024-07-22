@@ -7,7 +7,7 @@
   <div class="relative w-full max-w-4xl h-auto mt-15">
     <div class="relative w-full h-auto">
       <img src="/src/assets/solutions.png" alt="Solutions Image" class="w-full h-auto" />
-      <div class="dot absolute w-[10px] h-[10px] bg-red-500 rounded-full bottom-[52.5%] left-[30.5%]"></div>
+      <img src="/src/assets/Node.png" class="absolute top-[46%] right-[25.45%] w-[165px] h-[155px] pulse-animation" />
     </div>
   </div>
 </div>
@@ -17,21 +17,19 @@
     position: relative;
   }
 
-  .dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    animation: move-to-center-x-left 5s infinite;
+  .pulse-animation {
+    animation: pulse 4s infinite;
   }
 
-  @keyframes move-to-center-x-left {
+  @keyframes pulse {
     0% {
-      left: 30.5%;
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
     }
     100% {
-      left: 40%;
+      opacity: 1;
     }
   }
 

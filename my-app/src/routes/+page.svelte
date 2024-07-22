@@ -1,6 +1,6 @@
 <script>
   import HeroCard from '../components/HeroCard.svelte';
-  import Solutions from '../components/solutions.svelte';
+  import Solutions from '../components/Solutions.svelte';
   import CardComponent from '../components/cardComponent.svelte'; // Import the cardComponent
   import '../styles/app.css';
   import ContactComponent from '../components/contactComponent.svelte';
