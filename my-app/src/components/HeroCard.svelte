@@ -1,9 +1,5 @@
 <script>
   import Button from "./Button.svelte";
-
-  export let label = "";
-  export let type = "primary"; // "primary", "secondary", "loginBtn", "blackWhite"
-  export let onClick = () => {};
 </script>
 
 <div class="hero-card bg-cover bg-center rounded-[48px] p-10 relative overflow-hidden h-[620px]" style="background-image: url('/src/assets/background-card.jpg');">
