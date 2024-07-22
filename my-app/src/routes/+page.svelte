@@ -3,6 +3,7 @@
   import Solutions from '../components/solutions.svelte';
   import CardComponent from '../components/cardComponent.svelte'; // Import the cardComponent
   import '../styles/app.css';
+  import ContactComponent from '../components/contactComponent.svelte';
 </script>
 
 <main class="p-4">
@@ -54,4 +55,5 @@
     buttonClick={() => console.log("Explore E-optimization clicked")}
 		reverse={true} 
   />
+	<ContactComponent/> 
 </main>
