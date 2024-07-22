@@ -6,10 +6,18 @@
 
 <button
   on:click={onClick}
-  class="py-2 px-4 rounded-full
+  class="flex items-center justify-center py-2 px-4 rounded-full
     {type === 'primary' ? 'bg-[#FF5722] text-white hover:bg-[#E64A19]' : ''}
     {type === 'secondary' ? 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100' : ''}
     {type === 'loginBtn' ? 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 font-bold' : ''}
-    {type === 'ctaBtn' ? 'text-2xl font-bold bg-black text-white w-[12.5rem] h-[4.5rem] transform transition-transform duration-300 hover:scale-105' : ''}">
+		{type === 'startBtn' ? 'text-2xl font-bold bg-black text-white w-[12.3rem] h-[4.3rem] transform transition-transform duration-300 hover:scale-105' : ''}
+    {type === 'ctaBtn' ? 'text-2xl font-bold bg-black text-white w-[12.3rem] h-[4.3rem] mt-8 transform transition-transform duration-300 hover:scale-105' : ''}">
   {label}
+  {#if type === 'ctaBtn'}
+    <img src="src/assets/arrow.png" alt="Arrow" class="ml-4 w-6 h-4" />
+  {/if}
 </button>
+
+<style>
+  /* Add any additional styles if necessary */
+</style>

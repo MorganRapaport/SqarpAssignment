@@ -16,6 +16,6 @@
         Get in touch today to find out how to grow your online <br /> business by getting serious about product information.
       </p>
     </div>
-    <Button label="Get started" type="ctaBtn" on:click={() => console.log('Get started clicked')} />
+    <Button label="Get started" type="startBtn" on:click={() => console.log('Get started clicked')} />
   </div>
 </div>

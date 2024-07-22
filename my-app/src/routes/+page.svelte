@@ -54,5 +54,4 @@
     buttonClick={() => console.log("Explore E-optimization clicked")}
 		reverse={true} 
   />
-
 </main>
