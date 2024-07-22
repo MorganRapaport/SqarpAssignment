@@ -21,7 +21,7 @@
   ];
 
   logosTop = logosTop.concat(logosTop, logosTop, logosTop, logosTop, logosTop, logosTop);
-  logosBottom = logosBottom.concat(logosBottom, logosBottom, logosBottom, logosBottom);
+  logosBottom = logosBottom.concat(logosBottom, logosBottom, logosBottom, logosBottom, logosBottom, logosBottom);
 </script>
 
 <div class="text-center mt-32">
@@ -30,7 +30,7 @@
 </div>
 
 <div class="overflow-hidden w-full">
-  <div class="flex animate-marquee hover:pause space-x-4 sm:space-x-8 w-[200%]">
+  <div class="flex animate-marquee hover:pause space-x-4 sm:space-x-8 w-[300%]">
     {#each logosTop as logo}
       <div class="p-2 sm:p-4 transform transition-transform duration-300 hover:scale-105">
         <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-32 h-20 sm:w-52 sm:h-32">
@@ -43,7 +43,7 @@
 </div>
 
 <div class="overflow-hidden mt-6 w-full">
-  <div class="flex animate-marquee-reverse hover:pause space-x-4 sm:space-x-8 w-[200%]">
+  <div class="flex animate-marquee-reverse hover:pause space-x-4 sm:space-x-8 w-[300%]">
     {#each logosBottom as logo}
       <div class="p-2 sm:p-4 transform transition-transform duration-300 hover:scale-105">
         <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-32 h-20 sm:w-52 sm:h-32">
@@ -58,12 +58,12 @@
 <style>
   @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-33.3333%); }
   }
 
   @keyframes marquee-reverse {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(50%); }
+    0% { transform: translateX(-33.3333%); }
+    100% { transform: translateX(0); }
   }
 
   .animate-marquee {
