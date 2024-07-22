@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-col items-center mt-16">
-  <h2 class="text-7xl font-bold text-[#0D0F33] mb-8">Our solutions.</h2>
+  <h2 class="text-4xl md:text-7xl font-bold text-[#0D0F33] mb-8">Our solutions.</h2>
   <div class="relative w-full max-w-4xl h-auto">
     <div class="relative w-full h-auto">
       <img src="/src/assets/solutions.png" alt="Solutions Image" class="w-full h-auto" />

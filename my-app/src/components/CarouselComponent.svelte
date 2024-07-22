@@ -21,7 +21,7 @@
   ];
 
   logosTop = logosTop.concat(logosTop, logosTop, logosTop, logosTop, logosTop, logosTop);
-  logosBottom = logosBottom.concat(logosBottom, logosBottom, logosBottom, logosBottom, logosBottom, logosBottom);
+  logosBottom = logosBottom.concat(logosBottom, logosBottom, logosBottom, logosBottom);
 </script>
 
 <div class="text-center mt-32">
@@ -30,12 +30,12 @@
 </div>
 
 <div class="overflow-hidden w-full">
-  <div class="flex animate-marquee hover:pause space-x-8 w-[200%]">
+  <div class="flex animate-marquee hover:pause space-x-4 sm:space-x-8 w-[200%]">
     {#each logosTop as logo}
-      <div class="p-4 transform transition-transform duration-300 hover:scale-105">
-        <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-52 h-32">
-          <img src={logo.src} alt={logo.title} class="h-16 mx-auto mb-2" />
-          <p class="text-center text-base font-semibold">{logo.title}</p>
+      <div class="p-2 sm:p-4 transform transition-transform duration-300 hover:scale-105">
+        <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-32 h-20 sm:w-52 sm:h-32">
+          <img src={logo.src} alt={logo.title} class="h-8 sm:h-16 mx-auto mb-1 sm:mb-2" />
+          <p class="text-center text-xs sm:text-base font-semibold">{logo.title}</p>
         </div>
       </div>
     {/each}
@@ -43,12 +43,12 @@
 </div>
 
 <div class="overflow-hidden mt-6 w-full">
-  <div class="flex animate-marquee-reverse hover:pause space-x-8 w-[200%]">
+  <div class="flex animate-marquee-reverse hover:pause space-x-4 sm:space-x-8 w-[200%]">
     {#each logosBottom as logo}
-      <div class="p-4 transform transition-transform duration-300 hover:scale-105">
-        <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-52 h-32">
-          <img src={logo.src} alt={logo.title} class="h-16 mx-auto mb-2" />
-          <p class="text-center text-sm">{logo.title}</p>
+      <div class="p-2 sm:p-4 transform transition-transform duration-300 hover:scale-105">
+        <div class="flex flex-col items-center justify-center bg-[#F8F9FB] w-32 h-20 sm:w-52 sm:h-32">
+          <img src={logo.src} alt={logo.title} class="h-8 sm:h-16 mx-auto mb-1 sm:mb-2" />
+          <p class="text-center text-xs sm:text-base">{logo.title}</p>
         </div>
       </div>
     {/each}
@@ -67,11 +67,21 @@
   }
 
   .animate-marquee {
-    animation: marquee 80s linear infinite;
+    animation: marquee 40s linear infinite;
   }
 
   .animate-marquee-reverse {
-    animation: marquee-reverse 80s linear infinite;
+    animation: marquee-reverse 40s linear infinite;
+  }
+
+  @media (max-width: 640px) {
+    .animate-marquee {
+      animation-duration: 20s;
+    }
+
+    .animate-marquee-reverse {
+      animation-duration: 20s;
+    }
   }
 
   .hover\:pause:hover {
