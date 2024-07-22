@@ -1,6 +1,6 @@
 <script>
   export let label = "";
-  export let type = "primary"; // "primary", "secondary", "loginBtn", "ctaBtn"
+  export let type = "primary"; 
   export let onClick = () => {};
 </script>
 
@@ -21,5 +21,4 @@
 </button>
 
 <style>
-  /* Add any additional styles if necessary */
 </style>

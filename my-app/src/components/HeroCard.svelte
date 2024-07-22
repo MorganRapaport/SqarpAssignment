@@ -12,7 +12,7 @@
         Get in touch today to find out how to grow your online <br class="hidden md:block" /> business by getting serious about product information.
       </p>
     </div>
-    <div class="hidden md:block mt-16"> <!-- Added mt-16 for 64px margin -->
+    <div class="hidden md:block mt-16"> 
       <Button label="Get started" type="startBtn" on:click={() => console.log('Get started clicked')} />
     </div>
   </div>
@@ -22,5 +22,4 @@
 </div>
 
 <style>
-  /* Tailwind CSS styles are used directly in the class attributes */
 </style>

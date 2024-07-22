@@ -7,7 +7,7 @@
   <div class="relative w-full max-w-4xl h-auto mt-15">
     <div class="relative w-full h-auto">
       <img src="/src/assets/solutions.png" alt="Solutions Image" class="w-full h-auto" />
-      <img src="/src/assets/Node.png" class="absolute top-[46%] right-[25.45%] w-[165px] h-[155px] pulse-animation" />
+      <img src="/src/assets/Node.png" class="absolute top-[46%] right-[25.45%] w-[165px] h-[155px] pulse-animation hidden sm:block" />
     </div>
   </div>
 </div>
@@ -35,5 +35,12 @@
 
   .mt-15 {
     margin-top: 60px;
+  }
+
+  /* Ensure the Node image does not render on small screens */
+  @media (max-width: 640px) {
+    .pulse-animation {
+      display: none;
+    }
   }
 </style>
