@@ -11,6 +11,7 @@
     {type === 'secondary' ? 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100' : ''}
     {type === 'loginBtn' ? 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 font-bold' : ''}
 		{type === 'contactBtn' ? 'bg-[#AF3F12] text-white text-bold text-2xl hover:bg-black w-[13rem] h-[4.375rem] mr-16' : ''}
+		{type === 'touchBtn' ? 'bg-[#BEE2FF] text-black border text-xs border-gray-300 hover:bg-gray-100 font-bold' : ''}
 		{type === 'startBtn' ? 'text-2xl font-bold bg-black text-white w-[12.3rem] h-[4.3rem] transform transition-transform duration-300 hover:scale-105' : ''}
     {type === 'ctaBtn' ? 'text-2xl font-bold bg-black text-white w-[12.3rem] h-[4.3rem] mt-8 transform transition-transform duration-300 hover:scale-105' : ''}">
   {label}
